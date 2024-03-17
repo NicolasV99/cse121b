@@ -72,17 +72,35 @@ document.getElementById('#getTotal').addEventListener('click', function(){
 
 });
 
-
-
 /* ARRAY METHODS - Functional Programming */
+
+let numbersArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+
 /* Output Source Array */
+
+document.getElementById('#array').textContent = numbersArray.join(', ');
 
 /* Output Odds Only Array */
 
+const oddNumbers = numbersArray.filter(num => num % 2 !== 0);
+document.getElementById('#odds').textContent = oddNumbers.join(', ');
+
 /* Output Evens Only Array */
+
+const evenNumbers = numbersArray.filter(num => num % 2 === 0);
+document.getElementById('#evens').textContent = evenNumbers.join(', ');
 
 /* Output Sum of Org. Array */
 
+const sumOfArray = numbersArray.reduce((sum, num) => sum + num);
+document.getElementById('#sumOfArray').textContent = sumOfArray;
+
 /* Output Multiplied by 2 Array */
 
+const multipliedArray = numbersArray.map(num => num * 2);
+document.getElementById('#multiplied').textContent = multipliedArray.join(', ');
+
 /* Output Sum of Multiplied by 2 Array */
+
+const sumOfMultiplied = multipliedArray.reduce((sum, num) => sum + num, 0);
+document.getElementById('#sumOfMultiplied').textContent = sumOfMultiplied;
