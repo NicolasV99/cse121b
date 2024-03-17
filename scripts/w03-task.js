@@ -8,11 +8,11 @@ function add (number1, number2){
 }
 
 function addNumbers(addNumber1, addNumber2){
-    let addNumber1 = Number(document.querySelector('#add1').value);
-    let addNumber2 = Number(document.querySelector('#add2').value);
+    let addNumber1 = Number(document.querySelector('add1').value);
+    let addNumber2 = Number(document.querySelector('add2').value);
 
-    document.querySelector('#sum').value = add(addNumber1, addNumber2);
-    document.querySelector('#addNumbers').addEventListener('click', addNumbers);
+    document.querySelector('sum').value = add(addNumber1, addNumber2);
+    document.querySelector('addNumbers').addEventListener('click', addNumbers);
 }
 
 /* Function Expression - Subtract Numbers */
