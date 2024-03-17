@@ -109,3 +109,6 @@ document.querySelector('#multiplied').innerHTML = multipliedArray.join(', ');
 
 const sumOfMultiplied = multipliedArray.reduce((sum, num) => sum + num, 0);
 document.querySelector('#sumOfMultiplied').innerHTML = sumOfMultiplied;
+
+
+//Code by Nicolas Velasquez
