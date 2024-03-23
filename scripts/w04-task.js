@@ -28,7 +28,7 @@ myProfile.placesLived.push({
 });
 
 myProfile.placesLived.push({
-    place: 'Valle, Colombia',
+    place: 'Tulua, Valle, Colombia',
     length: '22 years'
 });
 
@@ -40,7 +40,7 @@ document.querySelector('#name').textContent = myProfile.name;
 
 /* Photo with attributes */
 
-document.querySelector('#potho').src = myProfile.photo;
+document.querySelector('#photo').src = myProfile.photo;
 document.querySelector('#photo').alt = myProfile.name;
 
 /* Favorite Foods List*/
