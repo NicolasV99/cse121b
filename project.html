@@ -20,11 +20,42 @@
       <li><a href="w01-task.html">W1 Task</a></li>
       <li><a href="w03-task.html">W3 Task</a></li>
       <li><a href="w04-task.html">W4 Task</a></li>
-      <li><a href="w05-task.html" class="active">W5 Task</a></li>
-      <li><a href="project.html">Project</a></li>
+      <li><a href="w05-task.html">W5 Task</a></li>
+      <li><a href="project.html" class="active">Project</a></li>
     </ul>
   </nav>
   <main>
+    <h1>Movie Search</h1>
+    <div class="movie-list" id="movie-list">
+        <div class="movie-card">
+            <img src="images/kun-fu-panda.jpg" alt="Kun Fu Panda 4" class="movie-poster">
+            <h3 class="movie-title">Kun Fu Panda 4</h3>
+            <button class="details-button" data-id="movie-id">View Details</button>
+        </div>
+        <div class="movie-card">
+            <img src="images/Arthur_the_king_poster.jpg" alt="Arthur The King" class="movie-poster">
+            <h3 class="movie-title">Arthur The King</h3>
+            <button class="details-button" data-id="movie-id">View Details</button>
+        </div>
+    </div>
+    <div class="movie-details" id="movie-details">
+        <h2>Movie Details</h2>
+        <div class="details-content">
+          <div class="details-image">
+            <img src="" alt="Movie Poster" id="movie-poster">
+          </div>
+          <div class="details-info">
+            <h3 id="movie-title"></h3>
+            <p><strong>Release Year:</strong> <span id="release-year"></span></p>
+            <p><strong>Director:</strong> <span id="director"></span></p>
+            <p><strong>Genre:</strong> <span id="genre"></span></p>
+            <p><strong>Classification:</strong> <span id="classification"></span></p>
+          </div>
+        </div>
+        <button id="close-details">Close</button>
+      </div>
+    
+
   </main>
 
 

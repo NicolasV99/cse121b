@@ -279,6 +279,110 @@ footer {
     margin: .5rem;
 }
 
+
+/*************************************CSS Code for Project********************************/
+
+main {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Movie list styles */
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+  
+.movie-card {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+  
+.movie-card:hover {
+    transform: translateY(-5px);
+}
+  
+.movie-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+  
+.movie-card .movie-title {
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.movie-card .details-button{
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+/* Movie details styles */
+.movie-details {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+  
+.movie-details.active {
+    display: block;
+}
+  
+.movie-details h2 {
+    margin-bottom: 10px;
+}
+  
+.movie-details p {
+    margin-bottom: 20px;
+}
+  
+.movie-details button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.movie-details button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
 /* Media Queries */
 @media only screen and (min-width: 32.5em) {
     nav ul {
