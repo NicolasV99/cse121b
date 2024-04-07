@@ -25,36 +25,21 @@
     </ul>
   </nav>
   <main>
-    <h1>Movie Search</h1>
-    <div class="movie-list" id="movie-list">
-        <div class="movie-card">
-            <img src="images/kun-fu-panda.jpg" alt="Kun Fu Panda 4" class="movie-poster">
-            <h3 class="movie-title">Kun Fu Panda 4</h3>
-            <button class="details-button" data-id="movie-id">View Details</button>
-        </div>
-        <div class="movie-card">
-            <img src="images/Arthur_the_king_poster.jpg" alt="Arthur The King" class="movie-poster">
-            <h3 class="movie-title">Arthur The King</h3>
-            <button class="details-button" data-id="movie-id">View Details</button>
-        </div>
-    </div>
-    <div class="movie-details" id="movie-details">
-        <h2>Movie Details</h2>
-        <div class="details-content">
-          <div class="details-image">
-            <img src="" alt="Movie Poster" id="movie-poster">
-          </div>
-          <div class="details-info">
-            <h3 id="movie-title"></h3>
-            <p><strong>Release Year:</strong> <span id="release-year"></span></p>
-            <p><strong>Director:</strong> <span id="director"></span></p>
-            <p><strong>Genre:</strong> <span id="genre"></span></p>
-            <p><strong>Classification:</strong> <span id="classification"></span></p>
-          </div>
-        </div>
-        <button id="close-details">Close</button>
+    <h1>Filter Movies by Genre</h1>
+      <div id="genre-filter">
+        <label for="genre-select">Select Genre:</label>
+        <select id="genre-select">
+          <option value="all">All Genres</option>
+          <option value="action">Action</option>
+          <option value="comedy">Comedy</option>
+          <option value="adventure">Adventure</option>
+          <option value="crime">Crime</option>
+          <option value="drama">Drama</option>
+        </select>
       </div>
-    
+      <div id="movies-list">
+        <!-- Movie cards will be dynamically generated here -->
+      </div>
 
   </main>
 
