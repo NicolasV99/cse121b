@@ -302,7 +302,7 @@ main {
 /* Styles for movie grid layout */
 #movies-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Display 5 movies in a row */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
   }
   
@@ -322,8 +322,8 @@ main {
   
   .movie-card img {
     width: 100%;
-    height: 300px; /* Set a fixed height for movie images */
-    object-fit: cover; /* Maintain aspect ratio while covering the entire container */
+    height: 300px; 
+    object-fit: cover; 
     border-radius: 8px 8px 0 0;
   }
   
@@ -343,30 +343,28 @@ main {
   /* Responsive adjustments */
   @media screen and (max-width: 1200px) {
     #movies-list {
-      grid-template-columns: repeat(4, 1fr); /* Display 4 movies in a row on smaller screens */
+      grid-template-columns: repeat(4, 1fr); 
     }
   }
   
   @media screen and (max-width: 992px) {
     #movies-list {
-      grid-template-columns: repeat(3, 1fr); /* Display 3 movies in a row on even smaller screens */
+      grid-template-columns: repeat(3, 1fr); 
     }
   }
   
   @media screen and (max-width: 768px) {
     #movies-list {
-      grid-template-columns: repeat(2, 1fr); /* Display 2 movies in a row on small screens */
+      grid-template-columns: repeat(2, 1fr); 
     }
   }
   
   @media screen and (max-width: 576px) {
     #movies-list {
-      grid-template-columns: repeat(1, 1fr); /* Display 1 movie per row on extra small screens */
+      grid-template-columns: repeat(1, 1fr); 
     }
   }
   
-  
-
 
 
 /* Media Queries */
